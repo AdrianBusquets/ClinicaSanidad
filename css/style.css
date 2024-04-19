@@ -1,0 +1,152 @@
+/*********************GENERAL STYLES********************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.btn{
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    transition: all ease 0.6s;
+}
+
+.btn:hover{
+    color: whitesmoke;
+    background-color: black;
+    border-color: whitesmoke;
+}
+
+input{
+    border: none;
+    border-radius: 0.5rem;
+    padding-inline: 0.5rem;
+    outline: none;
+    outline-offset: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+
+
+/********************************NAV*******************************/
+header{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 2rem;
+}
+.nav{
+    box-shadow: 0px 3px 16px -3px rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.233);
+    border-bottom: none;
+}
+
+.nav-link.active {
+    color: whitesmoke!important;
+    background-color: black !important;
+    border-bottom: none;
+}
+
+
+.nav-link{
+    color: black;
+    transition: all ease 0.6s;
+}
+
+.dropdown-menu{
+    color: whitesmoke;
+    background-color: black;
+}
+
+.dropdown-item{
+    color: whitesmoke;
+    background-color: black;
+}
+
+.dropdown-menu:focus{
+    color: whitesmoke;
+    background-color: black;
+}
+
+.nav-link:focus{
+    color: whitesmoke!important;
+    background-color: black !important;
+    
+}
+
+.nav-link:hover, .dropdown-menu:hover{
+    color: whitesmoke;
+    background-color: black;
+    border-bottom: none;
+}
+
+
+/*******************************INDEX****************************/
+
+.titulo{
+    position: relative;
+    max-width: 100vw;
+    text-align: center;
+    color: rgb(192, 190, 190);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    top: 40%;
+}
+
+.header_index{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/imgBody.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    height: 50vh;
+    margin-top: -2rem;
+    box-shadow: 0px 5px 11px -4px rgba(0,0,0,0.75);
+}
+/************************REGISTER*********************************/
+
+.registro{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formReg{
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+/***************************MENSAJES******************************/
+
+.mensajeNo{
+    position: relative;
+    width: 50vw;
+    text-align: center;
+    left: 25vw;
+    color: rgb(95, 30, 30);
+}
+.mensajeSi{
+    position: relative;
+    width: 50vw;
+    text-align: center;
+    left: 25vw;
+    color: rgb(30, 95, 39);
+}
