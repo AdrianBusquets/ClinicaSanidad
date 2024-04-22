@@ -64,8 +64,9 @@
                 <i class="fa-solid fa-file-invoice-dollar"></i>Facturación
                 </button>
                 <div class="dropdown-menu" aria-labelledby="triggerId">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="facturacion.php"><i class="fa-solid fa-receipt mx-1"></i>Presupuesto</a>
+                    <a class="dropdown-item" id="imprimir" href="#" onclick="imprimir()"><i class="fa-solid fa-print mx-1"></i>Imprimir</a>
+                    <a class="dropdown-item" href="mailto:clinica@hotmail.com"><i class="fa-solid fa-envelope-open mx-1"></i>Enviar</a>
                 </div>
                 </li>
             </ul>
@@ -77,7 +78,12 @@
 
 
 
-
+        <script>
+            function imprimir() {
+                document.querySelector('.dropdown-menu').style.display= 'hidden';
+                window.print();
+            }
+        </script>
 
 
 
