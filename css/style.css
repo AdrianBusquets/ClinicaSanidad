@@ -2,7 +2,10 @@
 *{
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
 }
+
+
 
 a{
     color: black;
@@ -253,6 +256,86 @@ header{
 .botonCalculo{
     position: relative;
     width: 10vw;
-    margin-block: 2rem;
-    left: 40vw;
+    margin-block: 3rem;
+    left: 66vw;
+}
+
+.botonEnviar{
+    position: relative;
+    width: 10vw;
+    margin-block: 3rem;
+    left: 30vw;
+}
+
+
+
+/*****************************HISTORIAL**********************************/
+.titleHistoral{
+    position: relative;
+    left: 20vw;
+    color: rgb(71, 71, 71);
+    text-shadow: 0px 0px 1px black;
+}
+
+.formHistorial{
+    display: flex;
+    width: 60vw;
+}
+
+.formHistorial div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.input_nombre{
+    width: 100%;
+}
+
+.input_numero{
+    width: 80%;
+}
+
+.tabla h3{
+    text-align: center;
+}
+
+.tabla_doble{
+    display: flex;
+    
+}
+
+.tabla_doble table{
+    margin-inline-end: 2rem;
+    width: 40%;
+}
+.vacunas{
+    
+    position: relative;
+    right: 8%;
+}
+
+/*********************PROGRESO******************************/
+.contenedorProgress{
+    width: 100%;
+    display: flex;
+    
+}
+
+.formProgress{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 4%;
+    
+}
+.formProgress input{
+    margin-bottom: 1rem;
+}
+
+.tabla_progreso{
+    width: 60%;
 }
