@@ -44,9 +44,10 @@ if(isset($_POST["enviar"])){
     $fecha_inicio = $_POST['fecha_inicio'];
     $fecha_final = $_POST['fecha_final'];
     $nombre_cliente = $_POST['nombre_cliente'];
+    $direccion_cliente = $_POST['direccion_cliente'];
     $precio = $_POST['precio_total'];
 
-    $insert = "INSERT INTO facturacion (especialidad, direccion_especialidad, fecha_inicio, fecha_final, nombre_cliente, precio_total) VALUE ('$especialidad', '$direccion_especialidad', '$fecha_inicio', '$fecha_final', '$nombre_cliente', $precio)";
+    $insert = "INSERT INTO facturacion (especialidad, direccion_especialidad, fecha_inicio, fecha_final, nombre_cliente, direccion_cliente, precio_total) VALUE ('$especialidad', '$direccion_especialidad', '$fecha_inicio', '$fecha_final', '$nombre_cliente', '$direccion_cliente', $precio)";
 
     $query = mysqli_query($connection, $insert);
 
