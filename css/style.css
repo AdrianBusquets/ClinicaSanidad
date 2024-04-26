@@ -105,7 +105,55 @@ header{
 }
 
 
-/*******************************INDEX****************************/
+/************************INDEX*********************************/
+
+.contenedorIndex, .contenedorRegistro{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#00000088, #00000098), url(../img/imgIndex.jpg);
+}
+
+.formIndex, .formRegistro{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+    position: fixed;
+    left: 25vw;
+    top: 10vh;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.699);
+    box-shadow: 0px 0px 13px -2px rgba(255, 255, 255, 0.75);
+}
+
+.formIndex input{
+    margin-bottom: 0.5rem;
+}
+
+.btnRegistrar{
+    width: 25%;
+    position: relative;
+    left: 37%;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************HOME****************************/
 
 .titulo{
     position: relative;
@@ -374,4 +422,54 @@ thead{
 .tabla_progreso{
     width: 65%;
     margin-inline: 4%;
+}
+
+
+/************************CONSULTA************************/
+
+.formDatos{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    left: 5vw;
+    width: 25vw;
+    text-align: center;
+}
+
+.formDatos label{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.botonesDatos{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-top: 1rem;
+}
+
+.botonesDatos input{
+    margin-block: 0.5rem;
+}
+
+.datosPaciente{
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    top: 5vh;
+}
+
+.resultadosPaciente{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5vh;
+    margin-bottom: 0.5rem;
+}
+
+
+.resultadoHistorialYProgreso{
+    text-transform: uppercase;
 }

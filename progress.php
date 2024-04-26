@@ -6,7 +6,7 @@ require "connect.php";
 if(isset($_POST['guardar'])){
     $nombre_paciente= $_POST['nombre_paciente'];
     $fecha_nacimiento= $_POST['fecha_nacimiento'];
-    $id_paciente= $_POST['id_paciente'];
+    $codigo_paciente= $_POST['codigo_paciente'];
     $id_registro_medico= $_POST['id_registro_medico'];
     $fecha_cita_proxima= $_POST['fecha_cita_proxima'];
     $fecha_revision= $_POST['fecha_revision'];
@@ -14,7 +14,7 @@ if(isset($_POST['guardar'])){
     $notas_progreso= implode(", ", $_POST["notas_progreso"]);
 
 
-    $insert= "INSERT INTO progreso(nombre_paciente,fecha_nacimiento,id_paciente,id_registro_medico,fecha_cita_proxima,fecha_revision,fecha_progreso,notas_progreso)VALUE('$nombre_paciente','$fecha_nacimiento','$id_paciente','$id_registro_medico','$fecha_cita_proxima','$fecha_revision','$fecha_progreso','$notas_progreso')" or die(mysqli_error($connection));
+    $insert= "INSERT INTO progreso(nombre_paciente,fecha_nacimiento,codigo_paciente,id_registro_medico,fecha_cita_proxima,fecha_revision,fecha_progreso,notas_progreso)VALUE('$nombre_paciente','$fecha_nacimiento','$codigo_paciente','$id_registro_medico','$fecha_cita_proxima','$fecha_revision','$fecha_progreso','$notas_progreso')" or die(mysqli_error($connection));
 
     if (mysqli_query($connection, $insert)) {
         echo "<h2 class='mensajeSi'>Progreso registrado</h2>";
@@ -55,7 +55,7 @@ if(isset($_POST['guardar'])){
                     <input type="date" name="fecha_nacimiento">
 
                     <label for="">Identificación del paciente</label>
-                    <input type="text" name="id_paciente">   
+                    <input type="text" name="codigo_paciente">   
                     
                 
                 
